@@ -4,14 +4,11 @@ import ProductList from './components/ProductList';
 
 const App = () => {
   const productListRef = useRef();
-
-  // Method to call when a new product is added
   const handleProductAdded = () => {
     if (productListRef.current) {
-      productListRef.current.fetchProducts(); // Call fetchProducts to refresh the list
+      productListRef.current.fetchProducts(); 
     }
   };
-
   return (
     <div>
       <h1>Add a Product</h1>
